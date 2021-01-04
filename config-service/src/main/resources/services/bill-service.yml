@@ -9,7 +9,7 @@ spring:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/bill_service_database
     username: postgres
-    password: root
+    password: 671321996
     driver-class-name: org.postgresql.Driver
 
 server:
