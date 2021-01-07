@@ -1,7 +1,6 @@
 .gradle
 build
 .idea
-
 account-service/build
 account-service/.gradle
 
@@ -22,3 +21,6 @@ gateway/.gradle
 
 registry/build
 registry/.gradle
+
+# Mail properties are here
+notification-service/src/main/resources/mail-props.properties
