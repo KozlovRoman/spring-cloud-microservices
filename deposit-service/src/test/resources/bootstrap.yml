@@ -1,0 +1,5 @@
+eureka:
+  client:
+    enabled: false
+# In a real integration test (this is the unit test close to integration) we have to use another service
+# interracted like the eureka. Here we disable it
