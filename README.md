@@ -313,6 +313,20 @@ Feign is a declarative Http client, which seamlessly integrates with Ribbon and 
 Keep in mind, that you are going to start 7 Spring Boot applications, 3 Databases and RabbitMQ. Make sure you have `6 Gb` memory available for Docker. 
 You can always run just vital services though: Gateway, Registry, Config, Account service and Bill service.
 
+After setting up all the configurations, you must definitely do gradle build.
+
+In order to build a docker image using a dockerfile for each service, the docker build command, for instance, for Account service will help us: `docker run -t account-service .` (where dot is the directory where the docker file is located).
+
+To run the docker image, you need to use the docker run command for each service, for example: `docker run -p 8081: 8081 account-service: latest` (where `latest` is the most recent version of the image).
+
+Docker-compose is configured in a .yml file.
+
+In this project, I used a bash script in the docker files of each service (for the order in which containers are launched).
+
+Images for each service are created by using `docker-compose build` command.
+
+Directly launch is performed by command `docker-compose up`.
+
 ### Before you start
 - Install Docker and Docker Compose.
 - Launch the databases
